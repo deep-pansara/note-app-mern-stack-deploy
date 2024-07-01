@@ -12,7 +12,7 @@ const app = express();
 //middlewares
 app.use(express.json());
 app.use(
- { origin: "https://note-app-mern-stack-deploy-nclfjc7cl-deep-pansaras-projects.vercel.app",
+ { origin: "*",
 credentials: true,
 methods: ['GET','POST','HEAD','PUT','PATCH','DELETE'],}
 );
