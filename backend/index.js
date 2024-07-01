@@ -11,13 +11,15 @@ const app = express();
 
 //middlewares
 app.use(express.json());
-app.use(cors({
-    origin: 'https://note-app-mern-stack-deploy-9qrfve2us-deep-pansaras-projects.vercel.app',
+
+const corsOptions = {
+    origin: 'https://note-app-mern-stack-deploy-2rhjgkbtx-deep-pansaras-projects.vercel.app', 
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
-}));
+};
 
-app.options('*', cors());
+app.use(cors(corsOptions));
+app.options('*', cors(corsOptions));
 
 //routes
 app.get("/", (req, res) => {
