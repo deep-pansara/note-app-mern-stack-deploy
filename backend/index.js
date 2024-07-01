@@ -11,11 +11,13 @@ const app = express();
 
 //middlewares
 app.use(express.json());
-app.use(
- { origin: "*",
-credentials: true,
-methods: ['GET','POST','HEAD','PUT','PATCH','DELETE'],}
-);
+app.use(cors({
+    origin: 'https://note-app-mern-stack-deploy-9qrfve2us-deep-pansaras-projects.vercel.app',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
+app.options('*', cors());
 
 //routes
 app.get("/", (req, res) => {
