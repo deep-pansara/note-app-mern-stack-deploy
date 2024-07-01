@@ -1,1 +1,1 @@
-export const BASE_URL = "http://localhost:8000";
+export const BASE_URL = "https://note-app-mern-stack-deploy-hd5kqbvkx-deep-pansaras-projects.vercel.app";
