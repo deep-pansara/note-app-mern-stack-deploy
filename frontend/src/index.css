@@ -25,17 +25,10 @@
   body {
     overflow-x: hidden;
     user-select: none;
-    @apply bg-red-100;
+    @apply bg-white;
   }
 
-  .image-container {
-   @apply bg-red-100;
-    display: inline-block;
-}
-
-.image-container img {
-    mix-blend-mode: multiply;
-}
+ 
 
 }
 
