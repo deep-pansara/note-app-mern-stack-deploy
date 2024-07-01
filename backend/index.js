@@ -12,9 +12,9 @@ const app = express();
 //middlewares
 app.use(express.json());
 app.use(
-  cors({
-    origin: "*",
-  })
+ { origin: "https://note-app-mern-stack-deploy-nclfjc7cl-deep-pansaras-projects.vercel.app",
+credentials: true,
+methods: ['GET','POST','HEAD','PUT','PATCH','DELETE'],}
 );
 
 //routes
