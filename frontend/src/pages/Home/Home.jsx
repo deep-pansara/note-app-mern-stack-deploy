@@ -109,7 +109,7 @@ function Home() {
         onSearchNote={onSearchNote}
         handleClearSearch={handleClearSearch}
       />
-      <div className="container mx-auto">
+      <div className="container mx-auto px-5">
         {allNotes.length > 0 ? (
           <div className="grid grid-cols-3 gap-4 mt-8">
             {allNotes?.map((item, index) => {
