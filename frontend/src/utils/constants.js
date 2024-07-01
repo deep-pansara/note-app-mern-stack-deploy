@@ -1,1 +1,1 @@
-export const BASE_URL = "https://note-app-mern-stack-deploy-hd5kqbvkx-deep-pansaras-projects.vercel.app";
+export const BASE_URL = "https://note-app-mern-stack-deploy-api.vercel.app";
