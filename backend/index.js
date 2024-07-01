@@ -13,7 +13,7 @@ const app = express();
 app.use(express.json());
 
 const corsOptions = {
-    origin: 'https://note-app-mern-stack-deploy-2rhjgkbtx-deep-pansaras-projects.vercel.app', 
+    origin: 'https://note-app-mern-stack-deploy-ui.vercel.app', 
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
 };
