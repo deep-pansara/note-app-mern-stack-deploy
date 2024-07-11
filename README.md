@@ -1,5 +1,5 @@
 # Note-Taking App
-
+![App Screenshot](app-screenshot.png)
 ## Overview
 This is a feature-rich note-taking application built using the MERN stack (MongoDB, Express.js, React, Node.js). The app allows users to add, edit, and delete notes with a secure user login system.
 
