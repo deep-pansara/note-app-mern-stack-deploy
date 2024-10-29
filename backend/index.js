@@ -27,7 +27,13 @@ app.get("/", (req, res) => {
 });
 
 app.get("/hello-world", (req, res) => {
-  res.json({ data: "Hello World !" });
+  res.json({ data: {
+      "name":"deep",
+      "product":"hp laptop",
+      "quatity":"5",
+      "rate" : "30000",
+      "amount": "3044"
+  } });
 });
 
 //Create an account
