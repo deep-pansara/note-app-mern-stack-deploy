@@ -26,6 +26,10 @@ app.get("/", (req, res) => {
   res.json({ data: "hello" });
 });
 
+app.get("/hello-world", (req, res) => {
+  res.json({ data: "Hello World !" });
+});
+
 //Create an account
 app.post("/create-account", async (req, res) => {
   const { fullName, email, password } = req.body;
